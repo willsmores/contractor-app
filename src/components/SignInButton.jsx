@@ -1,10 +1,10 @@
-import "./SignInButton.scss";
+import styles from './SignInButton.module.scss';
 import Link from "next/link";
 
 export default function SignInButton() {
   return (
-    <button className="SignInButton">
-      <Link href={'/information/'}>Sign In Here</Link>
-    </button>
+    <Link href={'/information/'}>
+      <button className={styles.SignInButton}>SIGN IN</button>
+    </Link>
   );
 }

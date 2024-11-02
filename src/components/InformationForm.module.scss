@@ -1,0 +1,78 @@
+// Variables
+$primary-color: #4a90e2;
+$background-color: #f4f6f8;
+$text-color: #333;
+$label-color: darken($text-color, 15%);
+$input-border-color: #ccc;
+$border-radius: 5px;
+$button-hover-color: darken($primary-color, 10%);
+$font-family: Arial, sans-serif;
+
+// Container styling
+.InformationForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  margin: 2rem auto;
+  background-color: $background-color;
+  border-radius: $border-radius;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: $font-family;
+
+  h1 {
+    color: $text-color;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  label {
+    color: $label-color;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid $input-border-color;
+    border-radius: $border-radius;
+    margin-bottom: 1rem;
+    color: $text-color;
+    background-color: #fff;
+
+    &:focus {
+      border-color: $primary-color;
+      outline: none;
+      box-shadow: 0 0 5px rgba($primary-color, 0.3);
+    }
+  }
+
+  button {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: $primary-color;
+    border: none;
+    border-radius: $border-radius;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $button-hover-color;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 5px rgba($primary-color, 0.3);
+    }
+  }
+}
