@@ -1,5 +1,5 @@
 import "./page.scss";
-import SignInButton from '@/components/SignInButton';
+import SignInButton from '../components/SignInButton';
 
 export default function Home() {
   return (
